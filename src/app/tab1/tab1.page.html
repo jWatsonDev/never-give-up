@@ -7,5 +7,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  Insert random "Never Give Up" motivation here]
+  <div class="fullheight xc">
+    <blockquote>
+      <p><em>{{motivationToDisplay?.quote}}</em></p>
+      <footer><strong>--{{motivationToDisplay?.author}}</strong></footer>
+    </blockquote>
+
+    <ion-button color="primary" size=small (click)="getNewMotivation()">More Motivation</ion-button>
+  </div>
 </ion-content>
